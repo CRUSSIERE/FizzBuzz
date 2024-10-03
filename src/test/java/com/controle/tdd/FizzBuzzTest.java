@@ -19,4 +19,14 @@ public class FizzBuzzTest {
         // THEN
         Assertions.assertThat(resultat).isEqualTo("1");
     }
+
+    @Test
+    void fizzBuzz_de_3_devrait_retourner_Fizz() {
+        // GIVEN
+        int nbre = 3;
+        // WHEN
+        String resultat = FizzBuzz.de(nbre);
+        // THEN
+        Assertions.assertThat(resultat).isEqualTo("Fizz");
+    }
 }
